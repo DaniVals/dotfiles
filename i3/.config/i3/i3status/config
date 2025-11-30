@@ -1,0 +1,24 @@
+general {
+	colors = true
+	interval = 1
+	separator = " # "
+}
+
+order += "battery all"
+order += "tztime local"
+
+tztime local {
+	format = "%H:%M %d-%m-%y"
+	hide_if_equals_localtime = false
+}
+
+battery all {
+	format = "%status %percentage"
+	format_down = "No battery"
+	status_unk = "? UNK"
+	status_chr = "⚡"
+	status_bat = "🔋"
+	status_full = ":3"
+	path = "/sys/class/power_supply/BAT%d/uevent"
+	low_threshold = 20
+}
