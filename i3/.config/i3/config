@@ -37,7 +37,9 @@ exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 exec --no-startup-id nm-applet
 
 # ejecutar compton
-exec --no-startup-id compton
+# exec --no-startup-id compton
+# ejecutar picom (me gusta mas)
+exec --no-startup-id picom --config ~/.config/picom/picom.conf 
 
 # Use pactl to adjust volume in PulseAudio.
 set $refresh_i3status killall -SIGUSR1 i3status
@@ -215,8 +217,8 @@ for_window [class="firefox"] move to workspace $ws3
 ############# PARTE VISUAL
 font pango:IBM 3270 12
 
-# gaps inner 5
-# border pixel 5
+gaps inner 5
+default_border pixel 0
 
 set $bg_root "/home/shovelflow/Pictures/backgrounds"
 
