@@ -49,7 +49,7 @@ format = '[$read_only]($read_only_style)[$path ]($style)'
 read_only_style = 'fg:#000000 bg:#00ffcc'
 
 [username]
-style_user = 'fg:#000000 bg:#cc00cc bold'
+style_user = 'fg:#000000 bg:#cc00cc italic'
 style_root = '#fff000'
 format = '[󰜐 $user]($style)'
 show_always = true
@@ -74,7 +74,7 @@ zsh_indicator = '𝖹'
 fish_indicator = '󰈺'
 powershell_indicator = '_'
 unknown_indicator = 'mystery shell'
-style = 'bold fg:#00ffff bg:#333333'
+style = 'fg:#00ffff bg:#333333'
 disabled = false
 
 [os]
@@ -114,7 +114,7 @@ style = 'yellow'
 format = "[$duration]($style)"
 min_time = 300
 show_milliseconds = false
-style = 'bold italic fg:#00ff00'
+style = 'bold italic fg:#00ff00 bg:#333333'
 
 # Programming Languages config
 
