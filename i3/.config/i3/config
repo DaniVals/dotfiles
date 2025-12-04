@@ -220,7 +220,7 @@ font pango:IBM 3270 12
 gaps inner 5
 default_border pixel 0
 
-set $bg_root "/home/shovelflow/Pictures/backgrounds"
+set $bg_root "/home/shovelflow/Pictures/feh_backgrounds"
 
 exec --no-startup-id feh --bg-fill --recursive --randomize $bg_root/*
 # compton ejecutado mas arriba
