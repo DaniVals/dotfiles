@@ -37,9 +37,25 @@ exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 exec --no-startup-id nm-applet
 
 
-# configuraciones de otras pantallas (pereza)
-# tiene que estar antes de la ejecucion del composer
-exec --no-startup-id xrandr --output HDMI-A-0 --mode 1920x1080
+# ================ XRANDR ======================= (configuraciones de otras pantallas (pereza))
+# outputs hardcodeados pq xrandr es un poco mierda en ese sentido xd
+# pero se supone que no deberian cambiar ya que va por enchufes fisicos del propio ordenador
+set $disp2conf xrandr --output HDMI-A-0 --mode 1920x1080
+# hacer la pantalla del portatil la primera
+set $disp1main xrandr --output eDP --primary
+# --above es donde se pone la pantalla en modo ampliacion, por ahora arriba
+set $disp2pos1 --above   eDP
+set $disp2pos2 --same-as eDP
+
+
+# darle formato a la segunda pantalla siempre
+exec --no-startup-id $disp2conf $disp2pos1
+# hacer la primera pantalla la principal (por si acaso)
+exec --no-startup-id $disp1main
+
+# botones para cambiar entre" duplicar" y "expansion"
+bindsym $mod+Control+9 exec $disp2conf $disp2pos1; $disp1main
+bindsym $mod+Control+0 exec $disp2conf $disp2pos2
 
 # ejecutar compton
 # exec --no-startup-id compton
