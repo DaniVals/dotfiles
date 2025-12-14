@@ -255,8 +255,8 @@ bindsym $mod+Mod1+5 exec --no-startup-id feh --bg-fill $bg_root/Slime_Rancher.jp
 bindsym $mod+Mod1+6 exec --no-startup-id feh --bg-fill $bg_root/Zelda_wolf.jpg
 bindsym $mod+Mod1+7 exec --no-startup-id feh --bg-fill $bg_root/Zelda_wind_waker.jpg
 bindsym $mod+Mod1+8 exec --no-startup-id feh --bg-fill $bg_root/Lethal_company.jpg
-bindsym $mod+Mod1+9 exec --no-startup-id feh --bg-fill $bg_root/Slime_Rancher.jpg
-bindsym $mod+Mod1+0 exec --no-startup-id feh --bg-fill $bg_root/DDLC_selfie.jpg
+bindsym $mod+Mod1+9 exec --no-startup-id feh --bg-fill $bg_root/deltarune_main.png
+bindsym $mod+Mod1+0 exec --no-startup-id feh --bg-fill $bg_root/cheryl.png
 
 # Iniciar PolyBar en vez de i3bar
 exec_always --no-startup-id ~/.config/polybar/launch.sh
