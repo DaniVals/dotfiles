@@ -1,0 +1,86 @@
+configuration {
+	/* important settings */
+	modi: "window,drun";
+	timeout {
+		action: "kb-cancel";
+		delay:  0;
+	}
+	filebrowser {
+		directories-first: true;
+		sorting-method:    "name";
+	}
+
+	/* controls */
+	kb-mode-next: "Shift+Right,Tab";
+	kb-row-tab: "";
+
+	/* style */
+	font: "IBM3270 20";
+	show-icons: true;
+
+	location: 6;
+	yoffset: -50;
+/*	xoffset: 0;*/
+
+	sidebar-mode: false;
+
+/*	fixed-num-lines: true;*/
+/*	terminal: "rofi-sensible-terminal";*/
+/*	window-command: "wmctrl -i -R {window}";*/
+/*	window-match-fields: "all";*/
+/*	icon-theme: ;*/
+/*	drun-match-fields: "name,generic,exec,categories,keywords";*/
+/*	drun-categories: ;*/
+/*	drun-show-actions: false;*/
+/*	drun-display-format: "{name} [<span weight='light' size='small'><i>({generic})</i></span>]";*/
+/*	drun-url-launcher: "xdg-open";*/
+/*	disable-history: false;*/
+/*	ignored-prefixes: "";*/
+/*	sort: false;*/
+/*	sorting-method: "normal";*/
+/*	case-sensitive: false;*/
+/*	cycle: true;*/
+/*	hover-select: false;*/
+/*	combi-modi: "window,run";*/
+/*	matching: "normal";*/
+/*	tokenize: true;*/
+/*	filter: ;*/
+/*	window-format: "{w}    {c}   {t}";*/
+/*	click-to-exit: true;*/
+/*	max-history-size: 25;*/
+/*	combi-hide-mode-prefix: false;*/
+/*	matching-negate-char: '-' /* unsupported */;*/
+/*	cache-dir: ;*/
+/*	window-thumbnail: false;*/
+/*	normalize-match: false;*/
+/*	steal-focus: false;*/
+/*	application-fallback-icon: ;*/
+/*	pid: "/run/user/1000/rofi.pid";*/
+}
+@theme "/usr/share/rofi/themes/Monokai.rasi"
+
+* {
+	background: #132c;
+	foreground: #ffff;
+	separatorcolor: #0fc9;
+	selected-normal-background: #6fc2;
+}
+
+window {
+	border: 0px;
+	padding: 10px;
+}
+
+scrollbar {
+	padding: -4px;
+}
+listview {
+	padding: 12px;
+}
+
+element-icon  {
+	size: 32px;
+}
+element-text {
+	margin: 0px 0px 0px 10px;
+}
