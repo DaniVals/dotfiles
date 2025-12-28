@@ -6,6 +6,7 @@ alias ga='git add .'
 alias gc='git commit'
 alias gp='git push'
 alias gs='git status'
+alias gyeet='git add .;git commit;git push'
 
 # ===== copiado del default ====
 # enable color support of ls and also add handy aliases
