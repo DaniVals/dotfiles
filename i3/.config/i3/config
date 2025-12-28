@@ -58,9 +58,7 @@ exec --no-startup-id gnome-keyring-daemon --start --components=secrets
 exec --no-startup-id /usr/libexec/gnome-settings-daemon
 # ====================================================================================================
 
-# == ejecutar compton
-# exec --no-startup-id compton
-# ejecutar picom (me gusta mas)
+# == COMPOSER -> picom
 exec --no-startup-id picom --config ~/.config/picom/picom.conf --experimental-backends 
 
 # == gestionar volumen
@@ -213,7 +211,7 @@ default_border pixel 0
 
 # background with feh
 set $bg_root "/home/shovelflow/Pictures/feh_backgrounds"
-# compton ejecutado mas arriba
+# picom ejecutado mas arriba
 exec --no-startup-id feh --bg-fill --recursive --randomize $bg_root/*
 bindsym $mod+Mod1+1 exec --no-startup-id feh --bg-fill $bg_root/Minecraft.jpg
 bindsym $mod+Mod1+2 exec --no-startup-id feh --bg-fill $bg_root/DDLC_selfie.jpg
@@ -239,3 +237,6 @@ bindsym $mod+Shift+w exec --no-startup-id rofi -show i3stack -modi "i3stack:~/.c
 
 for_window [class="discord"] move to workspace $ws4
 for_window [class="firefox"] move to workspace $ws3
+
+# ==== SCREENSHOT -> flameshot
+bindsym $mod+Shift+s exec --no-startup-id flameshot gui
