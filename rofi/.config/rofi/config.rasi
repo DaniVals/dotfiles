@@ -1,6 +1,6 @@
 configuration {
 	/* important settings */
-	modi: "window,drun";
+	modi: "drun,window,favoritos:~/.config/rofi/scripts/favs.sh";
 	timeout {
 		action: "kb-cancel";
 		delay:  0;
@@ -17,6 +17,7 @@ configuration {
 	/* style */
 	font: "IBM3270 20";
 	show-icons: true;
+/*	icon-theme: ;*/
 
 	location: 6;
 	yoffset: -50;
@@ -24,11 +25,11 @@ configuration {
 
 	sidebar-mode: false;
 
-/*	fixed-num-lines: true;*/
+	fixed-num-lines: true;
+
 /*	terminal: "rofi-sensible-terminal";*/
 /*	window-command: "wmctrl -i -R {window}";*/
 /*	window-match-fields: "all";*/
-/*	icon-theme: ;*/
 /*	drun-match-fields: "name,generic,exec,categories,keywords";*/
 /*	drun-categories: ;*/
 /*	drun-show-actions: false;*/
@@ -78,9 +79,13 @@ listview {
 	padding: 12px;
 }
 
+element{
+	border-radius: 5px;
+}
 element-icon  {
 	size: 32px;
 }
 element-text {
-	margin: 0px 0px 0px 10px;
+	margin: 5px 0px 5px 10px;
+	background-color: #0000;
 }
