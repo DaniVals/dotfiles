@@ -1,0 +1,1 @@
+echo -e " But a poem is never actually finished.\n It just stops moving." | lolcat -F 0.1 -S 100
