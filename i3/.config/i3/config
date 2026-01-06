@@ -56,6 +56,7 @@ bindsym $mod+Control+0 exec xrandr $disp2conf $disp2pos2
 exec --no-startup-id /usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1
 exec --no-startup-id gnome-keyring-daemon --start --components=secrets
 exec --no-startup-id /usr/libexec/gnome-settings-daemon
+bindsym $mod+s exec gnome-control-center
 # ====================================================================================================
 
 # == COMPOSER -> picom

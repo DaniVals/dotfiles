@@ -12,6 +12,7 @@ options=(
 	"Terminal kitty\0icon\x1futilities-terminal"
 	"VS Code\0icon\x1fvscode"
 	"Steam\0icon\x1fsteam"
+	"Gnome settings\0icon\x1forg.gnome.tweaks"
 )
 # commands executed, the key has to be the same as the name given
 declare -A commands
@@ -20,6 +21,7 @@ commands["Discord"]='discord'
 commands["Terminal kitty"]='kitty'
 commands["VS Code"]='code'
 commands["Steam"]='steam'
+commands["Gnome settings"]='gnome-control-center'
 
 if [ -z "$1" ]; then
 	# show options
