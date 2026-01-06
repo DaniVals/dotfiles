@@ -11,6 +11,7 @@ options=(
 	"Discord\0icon\x1fdiscord"
 	"Terminal kitty\0icon\x1futilities-terminal"
 	"VS Code\0icon\x1fvscode"
+	"Steam\0icon\x1fsteam"
 )
 # commands executed, the key has to be the same as the name given
 declare -A commands
@@ -18,6 +19,7 @@ commands["Firefox"]='firefox'
 commands["Discord"]='discord'
 commands["Terminal kitty"]='kitty'
 commands["VS Code"]='code'
+commands["Steam"]='steam'
 
 if [ -z "$1" ]; then
 	# show options
